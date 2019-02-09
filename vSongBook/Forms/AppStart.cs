@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EasyTabs;
 
 namespace vSongBook
 {
@@ -14,6 +15,8 @@ namespace vSongBook
     {
         AppFunctions vsbf = new AppFunctions();
         AppSettings settings = new AppSettings();
+        public static AppTabs tabbedApp = new AppTabs();
+        
         public AppStart()
         {
             InitializeComponent();
@@ -28,27 +31,28 @@ namespace vSongBook
 
         private void tmrTimer0_Tick(object sender, EventArgs e)
         {
-            this.BackgroundImage = global::vSongBook.Properties.Resources.laptop2;
+            pbxBackground.BackgroundImage = global::vSongBook.Properties.Resources.laptop2;
             tmrTimer0.Enabled = false;
             tmrTimer1.Enabled = true;
         }
 
         private void tmrTimer1_Tick(object sender, EventArgs e)
         {
-            this.BackgroundImage = global::vSongBook.Properties.Resources.laptop3;
+            pbxBackground.BackgroundImage = global::vSongBook.Properties.Resources.laptop3;
             tmrTimer1.Enabled = false;
             tmrTimer2.Enabled = true;
         }
 
         private void tmrTimer2_Tick(object sender, EventArgs e)
         {
-            this.BackgroundImage = global::vSongBook.Properties.Resources.laptop4;
+            pbxBackground.BackgroundImage = global::vSongBook.Properties.Resources.laptop4;
             tmrTimer2.Enabled = false;
             tmrTimer3.Enabled = true;
         }
 
         private void tmrTimer3_Tick(object sender, EventArgs e)
         {
+            pbxBackground.BackgroundImage = global::vSongBook.Properties.Resources.laptop5;
             tmrTimer3.Enabled = false;
             pbxIcon.Visible = true;
             tmrName1.Enabled = true;
@@ -201,8 +205,15 @@ namespace vSongBook
 
         private void lblLoaded_TextChanged(object sender, EventArgs e)
         {
-            CcSongBook home = new CcSongBook();
-            home.Show();
+            tabbedApp.Tabs.Add(new TitleBarTab(tabbedApp)
+            {
+                Content = new CcSongView { Text = "Song Search" }
+            });
+            tabbedApp.SelectedTabIndex = 0;
+
+            TitleBarTabsApplicationContext applicationContext = new TitleBarTabsApplicationContext();
+            applicationContext.Start(tabbedApp);
+
             this.Hide();
         }
 

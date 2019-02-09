@@ -465,7 +465,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel5.Controls.Add(this.lblFontGeneral, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.lblBoldGeneral, 5, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnFontGeneral, 6, 0);
@@ -613,7 +613,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel6.Controls.Add(this.lblFontPreview, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.btnFontPreview, 6, 0);
             this.tableLayoutPanel6.Controls.Add(this.pbxFontPreviewSmaller, 1, 0);
@@ -760,7 +760,7 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel7.Controls.Add(this.btnFontProject, 6, 0);
             this.tableLayoutPanel7.Controls.Add(this.lblFontProject, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.pbxFontProjectSmaller, 1, 0);
@@ -1398,7 +1398,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::vSongBook.Properties.Resources.appicon;
+            this.pictureBox1.Image = global::vSongBook.Properties.Resources.settings;
             this.pictureBox1.Location = new System.Drawing.Point(30, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(30, 10, 10, 10);
             this.pictureBox1.Name = "pictureBox1";
@@ -1477,14 +1477,14 @@
             this.toolStripSettings.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.toolStripSettings.Location = new System.Drawing.Point(1, 1);
             this.toolStripSettings.Name = "toolStripSettings";
-            this.toolStripSettings.Size = new System.Drawing.Size(250, 165);
+            this.toolStripSettings.Size = new System.Drawing.Size(250, 184);
             this.toolStripSettings.TabIndex = 1;
             this.toolStripSettings.Text = "toolStrip1";
             // 
             // tsbtnPage1
             // 
             this.tsbtnPage1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsbtnPage1.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnPage1.Image")));
+            this.tsbtnPage1.Image = global::vSongBook.Properties.Resources.tools;
             this.tsbtnPage1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tsbtnPage1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnPage1.Name = "tsbtnPage1";
@@ -1500,7 +1500,7 @@
             // 
             // tsbtnPage2
             // 
-            this.tsbtnPage2.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnPage2.Image")));
+            this.tsbtnPage2.Image = global::vSongBook.Properties.Resources.tools;
             this.tsbtnPage2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tsbtnPage2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnPage2.Name = "tsbtnPage2";
@@ -1515,7 +1515,7 @@
             // 
             // tsbtnPage3
             // 
-            this.tsbtnPage3.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnPage3.Image")));
+            this.tsbtnPage3.Image = global::vSongBook.Properties.Resources.tools;
             this.tsbtnPage3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tsbtnPage3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnPage3.Name = "tsbtnPage3";
@@ -1530,7 +1530,7 @@
             // 
             // tsbtnPage4
             // 
-            this.tsbtnPage4.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnPage4.Image")));
+            this.tsbtnPage4.Image = global::vSongBook.Properties.Resources.tools;
             this.tsbtnPage4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tsbtnPage4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnPage4.Name = "tsbtnPage4";

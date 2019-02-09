@@ -196,54 +196,6 @@
   <metadata name="toolStripSettings.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="tsbtnPage1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE+SURBVFhHxdfPLwNBGMbxLf17XMTJAQkRwUEPHERC4sb/
-        K2kigkg0Vdo4IcH3lSyrnt3O7PzwJJ9DszPvu+3sTNuCfGCMZXvxH7EbKN1iFVlTvYHSI1aQJeoGSn1s
-        YQ7JohpPu0QPSaIa1rnBOqJGNZrlHhuIEtXA1RBrCIoq7OsFC2gVVbCta9jSdOAcVSjUHZyXRhWIZYBN
-        NJ4jamJsdqDtQEZNSOEdV9jDr6jBqdnSLOErakAuF5AXclmEvJDSA87wHTUoBVv3U/yJGhzTCMeoPQvU
-        pBieYI1nRk0OYT/njjAPp6gibbxiF114RRXz8Qynj7ouqqiLNxwiOKp4kwn24fWd3xTVRLF9fI7oUc2q
-        rPEJnJ9q36imxh4u207JM93YzmprnPTfUDVlY9vHB/Dex6Gx5tvI9o5/UhSfnsEVSd1aZZkAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="tsbtnPage2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE+SURBVFhHxdfPLwNBGMbxLf17XMTJAQkRwUEPHERC4sb/
-        K2kigkg0Vdo4IcH3lSyrnt3O7PzwJJ9DszPvu+3sTNuCfGCMZXvxH7EbKN1iFVlTvYHSI1aQJeoGSn1s
-        YQ7JohpPu0QPSaIa1rnBOqJGNZrlHhuIEtXA1RBrCIoq7OsFC2gVVbCta9jSdOAcVSjUHZyXRhWIZYBN
-        NJ4jamJsdqDtQEZNSOEdV9jDr6jBqdnSLOErakAuF5AXclmEvJDSA87wHTUoBVv3U/yJGhzTCMeoPQvU
-        pBieYI1nRk0OYT/njjAPp6gibbxiF114RRXz8Qynj7ouqqiLNxwiOKp4kwn24fWd3xTVRLF9fI7oUc2q
-        rPEJnJ9q36imxh4u207JM93YzmprnPTfUDVlY9vHB/Dex6Gx5tvI9o5/UhSfnsEVSd1aZZkAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="tsbtnPage3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE+SURBVFhHxdfPLwNBGMbxLf17XMTJAQkRwUEPHERC4sb/
-        K2kigkg0Vdo4IcH3lSyrnt3O7PzwJJ9DszPvu+3sTNuCfGCMZXvxH7EbKN1iFVlTvYHSI1aQJeoGSn1s
-        YQ7JohpPu0QPSaIa1rnBOqJGNZrlHhuIEtXA1RBrCIoq7OsFC2gVVbCta9jSdOAcVSjUHZyXRhWIZYBN
-        NJ4jamJsdqDtQEZNSOEdV9jDr6jBqdnSLOErakAuF5AXclmEvJDSA87wHTUoBVv3U/yJGhzTCMeoPQvU
-        pBieYI1nRk0OYT/njjAPp6gibbxiF114RRXz8Qynj7ouqqiLNxwiOKp4kwn24fWd3xTVRLF9fI7oUc2q
-        rPEJnJ9q36imxh4u207JM93YzmprnPTfUDVlY9vHB/Dex6Gx5tvI9o5/UhSfnsEVSd1aZZkAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="tsbtnPage4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE+SURBVFhHxdfPLwNBGMbxLf17XMTJAQkRwUEPHERC4sb/
-        K2kigkg0Vdo4IcH3lSyrnt3O7PzwJJ9DszPvu+3sTNuCfGCMZXvxH7EbKN1iFVlTvYHSI1aQJeoGSn1s
-        YQ7JohpPu0QPSaIa1rnBOqJGNZrlHhuIEtXA1RBrCIoq7OsFC2gVVbCta9jSdOAcVSjUHZyXRhWIZYBN
-        NJ4jamJsdqDtQEZNSOEdV9jDr6jBqdnSLOErakAuF5AXclmEvJDSA87wHTUoBVv3U/yJGhzTCMeoPQvU
-        pBieYI1nRk0OYT/njjAPp6gibbxiF114RRXz8Qynj7ouqqiLNxwiOKp4kwn24fWd3xTVRLF9fI7oUc2q
-        rPEJnJ9q36imxh4u207JM93YzmprnPTfUDVlY9vHB/Dex6Gx5tvI9o5/UhSfnsEVSd1aZZkAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAEBAAAAEAIABoBAAAZgAAACAgAAABACAAqBAAAM4EAAAwMAAAAQAgAKglAAB2FQAAQEAAAAEA

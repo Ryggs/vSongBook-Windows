@@ -36,10 +36,10 @@
             this.lblSongTitle = new System.Windows.Forms.Label();
             this.tblBottom = new System.Windows.Forms.TableLayoutPanel();
             this.lblVerse = new System.Windows.Forms.Label();
+            this.txtCommandLine = new System.Windows.Forms.TextBox();
             this.lblSongLabel = new System.Windows.Forms.Label();
             this.lblSongno = new System.Windows.Forms.Label();
             this.lblSongText = new System.Windows.Forms.Label();
-            this.txtCommandLine = new System.Windows.Forms.TextBox();
             this.tmrMain = new System.Windows.Forms.Timer(this.components);
             this.tmrLinerr = new System.Windows.Forms.Timer(this.components);
             this.tblMain.SuspendLayout();
@@ -111,17 +111,18 @@
             // 
             // tblBottom
             // 
-            this.tblBottom.ColumnCount = 6;
+            this.tblBottom.ColumnCount = 7;
             this.tblBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tblBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tblBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tblBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tblBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tblBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tblBottom.Controls.Add(this.lblVerse, 3, 0);
-            this.tblBottom.Controls.Add(this.txtCommandLine, 2, 0);
             this.tblBottom.Controls.Add(this.lblSongLabel, 0, 0);
-            this.tblBottom.Controls.Add(this.lblSongno, 1, 0);
+            this.tblBottom.Controls.Add(this.lblSongno, 2, 0);
+            this.tblBottom.Controls.Add(this.txtCommandLine, 1, 0);
             this.tblBottom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblBottom.Location = new System.Drawing.Point(3, 525);
             this.tblBottom.Name = "tblBottom";
@@ -137,14 +138,27 @@
             this.lblVerse.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblVerse.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVerse.ForeColor = System.Drawing.Color.White;
-            this.lblVerse.Location = new System.Drawing.Point(717, 0);
+            this.lblVerse.Location = new System.Drawing.Point(208, 0);
             this.lblVerse.Name = "lblVerse";
-            this.lblVerse.Size = new System.Drawing.Size(194, 34);
+            this.lblVerse.Size = new System.Drawing.Size(503, 34);
             this.lblVerse.TabIndex = 8;
             this.lblVerse.Text = "Verse 1";
             this.lblVerse.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblVerse.Visible = false;
             this.lblVerse.Click += new System.EventHandler(this.lblVerse_Click);
+            // 
+            // txtCommandLine
+            // 
+            this.txtCommandLine.BackColor = System.Drawing.Color.Black;
+            this.txtCommandLine.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCommandLine.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCommandLine.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCommandLine.ForeColor = System.Drawing.Color.Black;
+            this.txtCommandLine.Location = new System.Drawing.Point(103, 3);
+            this.txtCommandLine.Name = "txtCommandLine";
+            this.txtCommandLine.Size = new System.Drawing.Size(1, 16);
+            this.txtCommandLine.TabIndex = 0;
+            this.txtCommandLine.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCommandLine_KeyDown);
             // 
             // lblSongLabel
             // 
@@ -163,12 +177,11 @@
             // lblSongno
             // 
             this.lblSongno.AutoSize = true;
-            this.lblSongno.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblSongno.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSongno.ForeColor = System.Drawing.Color.White;
-            this.lblSongno.Location = new System.Drawing.Point(103, 0);
+            this.lblSongno.Location = new System.Drawing.Point(108, 0);
             this.lblSongno.Name = "lblSongno";
-            this.lblSongno.Size = new System.Drawing.Size(94, 34);
+            this.lblSongno.Size = new System.Drawing.Size(55, 29);
             this.lblSongno.TabIndex = 7;
             this.lblSongno.Text = "#01";
             this.lblSongno.Click += new System.EventHandler(this.lblSongno_Click);
@@ -184,15 +197,7 @@
             this.lblSongText.Text = "Amazing Grace, how sweet the sound,\r\nThat saved a wretch like me,\r\nI once was los" +
     "t but now am found,\r\nWas blind but now I see.";
             this.lblSongText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtCommandLine
-            // 
-            this.txtCommandLine.Location = new System.Drawing.Point(203, 3);
-            this.txtCommandLine.Name = "txtCommandLine";
-            this.txtCommandLine.Size = new System.Drawing.Size(225, 20);
-            this.txtCommandLine.TabIndex = 0;
-            this.txtCommandLine.Visible = false;
-            this.txtCommandLine.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCommandLine_KeyDown);
+            this.lblSongText.Click += new System.EventHandler(this.lblSongText_Click_1);
             // 
             // tmrMain
             // 
@@ -217,6 +222,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DdProject";
             this.Padding = new System.Windows.Forms.Padding(10);
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

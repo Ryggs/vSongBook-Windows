@@ -34,13 +34,13 @@ namespace vSongBook
         private void DdProject_Load(object sender, EventArgs e)
         {
             
-            try { lblSongTitle.Font = new Font(settings.FontTypeGeneral, settings.FontSizeGeneral + 3, settings.FontBoldGeneral ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
+            try { lblSongTitle.Font = new Font(settings.FontTypeGeneral, settings.FontSizeGeneral + 5, settings.FontBoldGeneral ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
             catch (Exception) { }
-            try { lblSongLabel.Font = new Font(settings.FontTypeGeneral, settings.FontSizeGeneral - 3, settings.FontBoldGeneral ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
+            try { lblSongLabel.Font = new Font(settings.FontTypeGeneral, settings.FontSizeGeneral + 3, settings.FontBoldGeneral ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
             catch (Exception) { }
-            try { lblSongno.Font = new Font(settings.FontTypeGeneral, settings.FontSizeGeneral - 3, settings.FontBoldGeneral ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
+            try { lblSongno.Font = new Font(settings.FontTypeGeneral, settings.FontSizeGeneral + 3, settings.FontBoldGeneral ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
             catch (Exception) { }
-            try { lblVerse.Font = new Font(settings.FontTypeGeneral, settings.FontSizeGeneral - 3, settings.FontBoldGeneral ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
+            try { lblVerse.Font = new Font(settings.FontTypeGeneral, settings.FontSizeGeneral + 3, settings.FontBoldGeneral ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
             catch (Exception) { }
             try { lblSongText.Font = new Font(fontxt, fontsize, isbold ? FontStyle.Bold : FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))); }
             catch (Exception) { }
@@ -48,12 +48,7 @@ namespace vSongBook
             //grpMain.Text = "vSongBook v1.2.5.2 © " + DateTime.Today.Year + " " + settings.AppUser + " | " + vsbf.dateToday();
             //tmrMain.Enabled = true;
             loadSingleSong(settings.CurrentSong);
-        }
-
-
-        private void txtCommandLineActive()
-        {
-
+            txtCommandLine.Focus();
         }
 
         private void tmrMain_Tick(object sender, EventArgs e)
@@ -252,52 +247,52 @@ namespace vSongBook
       
         private void tblMain_Paint(object sender, PaintEventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void lblSongLabel_Click(object sender, EventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void lblSongno_Click(object sender, EventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void tblBottom_Paint(object sender, PaintEventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void lblSongText_Click(object sender, EventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void lblVerse_Click(object sender, EventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void lblSongTitle_Click(object sender, EventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void lineTop_Click(object sender, EventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void lineDown_Click(object sender, EventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void grpMain_Enter(object sender, EventArgs e)
         {
-            txtCommandLineActive();
+            txtCommandLine.Focus();
         }
 
         private void tmrLinerr_Tick(object sender, EventArgs e)
@@ -305,6 +300,11 @@ namespace vSongBook
             lineTop.BackColor = Color.White;
             lineDown.BackColor = Color.White;
             tmrLinerr.Enabled = false;
+        }
+
+        private void lblSongText_Click_1(object sender, EventArgs e)
+        {
+
         }
 
 

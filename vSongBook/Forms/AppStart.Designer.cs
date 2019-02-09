@@ -48,8 +48,8 @@
             this.tmrTimer6 = new System.Windows.Forms.Timer(this.components);
             this.lblLoaded = new System.Windows.Forms.Label();
             this.grpJustaMinute = new System.Windows.Forms.GroupBox();
-            this.btnClose = new JacksiroCtrl.JsButton();
             this.btnDone = new JacksiroCtrl.JsButton();
+            this.btnClose = new JacksiroCtrl.JsButton();
             this.lblYourName = new System.Windows.Forms.Label();
             this.txtAppUser = new JacksiroCtrl.JsTextBox();
             this.lblCharacters = new System.Windows.Forms.Label();
@@ -69,8 +69,8 @@
             this.pbxName6 = new System.Windows.Forms.PictureBox();
             this.pbxName4 = new System.Windows.Forms.PictureBox();
             this.pbxName3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tmrTimer0 = new System.Windows.Forms.Timer(this.components);
+            this.pbxBackground = new System.Windows.Forms.PictureBox();
             this.grpJustaMinute.SuspendLayout();
             this.tblInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxName2)).BeginInit();
@@ -83,7 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxName6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxName4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxName3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBackground)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrTimerMain
@@ -170,9 +170,9 @@
             // 
             // grpJustaMinute
             // 
-            this.grpJustaMinute.BackColor = System.Drawing.Color.Transparent;
-            this.grpJustaMinute.Controls.Add(this.btnClose);
+            this.grpJustaMinute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.grpJustaMinute.Controls.Add(this.btnDone);
+            this.grpJustaMinute.Controls.Add(this.btnClose);
             this.grpJustaMinute.Controls.Add(this.lblYourName);
             this.grpJustaMinute.Controls.Add(this.txtAppUser);
             this.grpJustaMinute.Controls.Add(this.lblCharacters);
@@ -186,27 +186,6 @@
             this.grpJustaMinute.TabStop = false;
             this.grpJustaMinute.Text = " Just a minute: ";
             this.grpJustaMinute.Visible = false;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnClose.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnClose.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnClose.Location = new System.Drawing.Point(416, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Radius = 16;
-            this.btnClose.Size = new System.Drawing.Size(32, 32);
-            this.btnClose.Stroke = true;
-            this.btnClose.StrokeColor = System.Drawing.Color.Black;
-            this.btnClose.TabIndex = 20;
-            this.btnClose.Text = "X";
-            this.btnClose.Transparency = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnDone
             // 
@@ -229,13 +208,34 @@
             this.btnDone.Transparency = false;
             this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnClose.Active2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnClose.Inactive2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnClose.Location = new System.Drawing.Point(416, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Radius = 16;
+            this.btnClose.Size = new System.Drawing.Size(32, 32);
+            this.btnClose.Stroke = true;
+            this.btnClose.StrokeColor = System.Drawing.Color.Black;
+            this.btnClose.TabIndex = 20;
+            this.btnClose.Text = "X";
+            this.btnClose.Transparency = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // lblYourName
             // 
             this.lblYourName.AutoSize = true;
             this.lblYourName.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYourName.Location = new System.Drawing.Point(10, 80);
             this.lblYourName.Name = "lblYourName";
-            this.lblYourName.Size = new System.Drawing.Size(281, 22);
+            this.lblYourName.Size = new System.Drawing.Size(280, 22);
             this.lblYourName.TabIndex = 18;
             this.lblYourName.Text = " Your Name/ Name of your church: ";
             // 
@@ -296,7 +296,7 @@
             // 
             // tblInfo
             // 
-            this.tblInfo.BackColor = System.Drawing.Color.Transparent;
+            this.tblInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.tblInfo.ColumnCount = 1;
             this.tblInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblInfo.Controls.Add(this.lblAppUser, 0, 0);
@@ -339,8 +339,9 @@
             // 
             // pbxName2
             // 
-            this.pbxName2.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName2.Image = global::vSongBook.Properties.Resources.name2;
+            this.pbxName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName2.BackgroundImage = global::vSongBook.Properties.Resources.name2;
+            this.pbxName2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName2.Location = new System.Drawing.Point(198, 114);
             this.pbxName2.Name = "pbxName2";
             this.pbxName2.Size = new System.Drawing.Size(40, 80);
@@ -351,8 +352,9 @@
             // 
             // pbxName1
             // 
-            this.pbxName1.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName1.Image = global::vSongBook.Properties.Resources.name1;
+            this.pbxName1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName1.BackgroundImage = global::vSongBook.Properties.Resources.name1;
+            this.pbxName1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName1.Location = new System.Drawing.Point(158, 114);
             this.pbxName1.Name = "pbxName1";
             this.pbxName1.Size = new System.Drawing.Size(40, 80);
@@ -363,8 +365,9 @@
             // 
             // pbxIcon
             // 
-            this.pbxIcon.BackColor = System.Drawing.Color.Transparent;
-            this.pbxIcon.Image = global::vSongBook.Properties.Resources.appicon;
+            this.pbxIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxIcon.BackgroundImage = global::vSongBook.Properties.Resources.appicon;
+            this.pbxIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxIcon.Location = new System.Drawing.Point(298, 49);
             this.pbxIcon.Name = "pbxIcon";
             this.pbxIcon.Size = new System.Drawing.Size(75, 75);
@@ -376,7 +379,7 @@
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
-            this.lblVersion.BackColor = System.Drawing.Color.Transparent;
+            this.lblVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.lblVersion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblVersion.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -389,8 +392,9 @@
             // 
             // pbxName9
             // 
-            this.pbxName9.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName9.Image = global::vSongBook.Properties.Resources.name7;
+            this.pbxName9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName9.BackgroundImage = global::vSongBook.Properties.Resources.name7;
+            this.pbxName9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName9.Location = new System.Drawing.Point(478, 114);
             this.pbxName9.Name = "pbxName9";
             this.pbxName9.Size = new System.Drawing.Size(40, 80);
@@ -401,8 +405,9 @@
             // 
             // pbxName5
             // 
-            this.pbxName5.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName5.Image = global::vSongBook.Properties.Resources.name5;
+            this.pbxName5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName5.BackgroundImage = global::vSongBook.Properties.Resources.name5;
+            this.pbxName5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName5.Location = new System.Drawing.Point(318, 114);
             this.pbxName5.Name = "pbxName5";
             this.pbxName5.Size = new System.Drawing.Size(40, 80);
@@ -413,8 +418,9 @@
             // 
             // pbxName7
             // 
-            this.pbxName7.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName7.Image = global::vSongBook.Properties.Resources.name3;
+            this.pbxName7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName7.BackgroundImage = global::vSongBook.Properties.Resources.name3;
+            this.pbxName7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName7.Location = new System.Drawing.Point(398, 114);
             this.pbxName7.Name = "pbxName7";
             this.pbxName7.Size = new System.Drawing.Size(40, 80);
@@ -425,8 +431,9 @@
             // 
             // pbxName8
             // 
-            this.pbxName8.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName8.Image = global::vSongBook.Properties.Resources.name3;
+            this.pbxName8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName8.BackgroundImage = global::vSongBook.Properties.Resources.name3;
+            this.pbxName8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName8.Location = new System.Drawing.Point(438, 114);
             this.pbxName8.Name = "pbxName8";
             this.pbxName8.Size = new System.Drawing.Size(40, 80);
@@ -437,8 +444,9 @@
             // 
             // pbxName6
             // 
-            this.pbxName6.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName6.Image = global::vSongBook.Properties.Resources.name6;
+            this.pbxName6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName6.BackgroundImage = global::vSongBook.Properties.Resources.name6;
+            this.pbxName6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName6.Location = new System.Drawing.Point(358, 114);
             this.pbxName6.Name = "pbxName6";
             this.pbxName6.Size = new System.Drawing.Size(40, 80);
@@ -449,8 +457,9 @@
             // 
             // pbxName4
             // 
-            this.pbxName4.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName4.Image = global::vSongBook.Properties.Resources.name4;
+            this.pbxName4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName4.BackgroundImage = global::vSongBook.Properties.Resources.name4;
+            this.pbxName4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName4.Location = new System.Drawing.Point(278, 114);
             this.pbxName4.Name = "pbxName4";
             this.pbxName4.Size = new System.Drawing.Size(40, 80);
@@ -461,8 +470,9 @@
             // 
             // pbxName3
             // 
-            this.pbxName3.BackColor = System.Drawing.Color.Transparent;
-            this.pbxName3.Image = global::vSongBook.Properties.Resources.name3;
+            this.pbxName3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pbxName3.BackgroundImage = global::vSongBook.Properties.Resources.name3;
+            this.pbxName3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxName3.Location = new System.Drawing.Point(238, 114);
             this.pbxName3.Name = "pbxName3";
             this.pbxName3.Size = new System.Drawing.Size(40, 80);
@@ -471,54 +481,54 @@
             this.pbxName3.TabStop = false;
             this.pbxName3.Visible = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::vSongBook.Properties.Resources.name7;
-            this.pictureBox3.Location = new System.Drawing.Point(162, 114);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 80);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 77;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
-            // 
             // tmrTimer0
             // 
             this.tmrTimer0.Interval = 300;
             this.tmrTimer0.Tick += new System.EventHandler(this.tmrTimer0_Tick);
+            // 
+            // pbxBackground
+            // 
+            this.pbxBackground.BackColor = System.Drawing.Color.Transparent;
+            this.pbxBackground.BackgroundImage = global::vSongBook.Properties.Resources.laptop1;
+            this.pbxBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbxBackground.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbxBackground.Location = new System.Drawing.Point(0, 0);
+            this.pbxBackground.Name = "pbxBackground";
+            this.pbxBackground.Size = new System.Drawing.Size(637, 372);
+            this.pbxBackground.TabIndex = 79;
+            this.pbxBackground.TabStop = false;
             // 
             // AppStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::vSongBook.Properties.Resources.laptop1;
+            this.BackgroundImage = global::vSongBook.Properties.Resources.wheat;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(637, 372);
-            this.Controls.Add(this.pbxIcon);
-            this.Controls.Add(this.lblVersion);
+            this.ControlBox = false;
             this.Controls.Add(this.tblInfo);
-            this.Controls.Add(this.pbxName2);
+            this.Controls.Add(this.pbxIcon);
             this.Controls.Add(this.pbxName1);
+            this.Controls.Add(this.lblVersion);
+            this.Controls.Add(this.pbxName2);
             this.Controls.Add(this.lblLoaded);
             this.Controls.Add(this.pbxName8);
             this.Controls.Add(this.pbxName6);
             this.Controls.Add(this.pbxName3);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pbxName9);
             this.Controls.Add(this.pbxName5);
             this.Controls.Add(this.pbxName4);
             this.Controls.Add(this.pbxName7);
             this.Controls.Add(this.grpJustaMinute);
+            this.Controls.Add(this.pbxBackground);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AppStart";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "vSongBook";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.AppStart_Load);
@@ -536,7 +546,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxName6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxName4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxName3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -583,7 +593,7 @@
         private System.Windows.Forms.PictureBox pbxName5;
         private System.Windows.Forms.PictureBox pbxName9;
         private System.Windows.Forms.PictureBox pbxName3;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer tmrTimer0;
+        private System.Windows.Forms.PictureBox pbxBackground;
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ToolStripProfessionalRenderer toolStripProfessionalRenderer1 = new System.Windows.Forms.ToolStripProfessionalRenderer();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CcSongBook));
             this.menuMainTop = new System.Windows.Forms.MenuStrip();
             this.menuItemFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,11 +76,7 @@
             this.menuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemViewHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemTechnicalSupport = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabParent = new Jacksiro.MdiTab.TabControl();
-            this.btnNewtab = new System.Windows.Forms.Button();
-            this.vsbLoading = new JacksiroCtrl.JsButton();
             this.tmrMain = new System.Windows.Forms.Timer(this.components);
-            this.jsFeedback = new JacksiroCtrl.JsFeedback();
             this.menuMainTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,7 +95,7 @@
             this.menuItemHelp});
             this.menuMainTop.Location = new System.Drawing.Point(0, 0);
             this.menuMainTop.Name = "menuMainTop";
-            this.menuMainTop.Size = new System.Drawing.Size(698, 24);
+            this.menuMainTop.Size = new System.Drawing.Size(796, 24);
             this.menuMainTop.TabIndex = 5;
             this.menuMainTop.Text = "MenuStrip1";
             // 
@@ -266,33 +261,33 @@
             // 
             this.menuItemNewTab.Name = "menuItemNewTab";
             this.menuItemNewTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.menuItemNewTab.Size = new System.Drawing.Size(206, 22);
+            this.menuItemNewTab.Size = new System.Drawing.Size(205, 22);
             this.menuItemNewTab.Text = "New Preview Tab";
             this.menuItemNewTab.Click += new System.EventHandler(this.menuItemNewTab_Click);
             // 
             // menuItemTabProperties
             // 
             this.menuItemTabProperties.Name = "menuItemTabProperties";
-            this.menuItemTabProperties.Size = new System.Drawing.Size(206, 22);
+            this.menuItemTabProperties.Size = new System.Drawing.Size(205, 22);
             this.menuItemTabProperties.Text = "Change Properties";
             // 
             // menuItemAnimateIcon
             // 
             this.menuItemAnimateIcon.Name = "menuItemAnimateIcon";
-            this.menuItemAnimateIcon.Size = new System.Drawing.Size(206, 22);
+            this.menuItemAnimateIcon.Size = new System.Drawing.Size(205, 22);
             this.menuItemAnimateIcon.Text = "Animate Icon";
             // 
             // menuItemUntab
             // 
             this.menuItemUntab.Name = "menuItemUntab";
-            this.menuItemUntab.Size = new System.Drawing.Size(206, 22);
+            this.menuItemUntab.Size = new System.Drawing.Size(205, 22);
             this.menuItemUntab.Text = "Untab ";
             // 
             // menuItemRemoveTab
             // 
             this.menuItemRemoveTab.Name = "menuItemRemoveTab";
             this.menuItemRemoveTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.menuItemRemoveTab.Size = new System.Drawing.Size(206, 22);
+            this.menuItemRemoveTab.Size = new System.Drawing.Size(205, 22);
             this.menuItemRemoveTab.Text = "Remove Tab";
             // 
             // menuItemSearch
@@ -437,100 +432,27 @@
             // 
             this.menuItemViewHelp.Name = "menuItemViewHelp";
             this.menuItemViewHelp.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.menuItemViewHelp.Size = new System.Drawing.Size(210, 22);
+            this.menuItemViewHelp.Size = new System.Drawing.Size(209, 22);
             this.menuItemViewHelp.Text = "How It Works";
             // 
             // menuItemTechnicalSupport
             // 
             this.menuItemTechnicalSupport.Name = "menuItemTechnicalSupport";
             this.menuItemTechnicalSupport.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.menuItemTechnicalSupport.Size = new System.Drawing.Size(210, 22);
+            this.menuItemTechnicalSupport.Size = new System.Drawing.Size(209, 22);
             this.menuItemTechnicalSupport.Text = "Get Technical Support";
-            // 
-            // tabParent
-            // 
-            this.tabParent.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.tabParent.BackColor = System.Drawing.Color.White;
-            this.tabParent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabParent.Location = new System.Drawing.Point(0, 24);
-            toolStripProfessionalRenderer1.RoundedEdges = true;
-            this.tabParent.MenuRenderer = toolStripProfessionalRenderer1;
-            this.tabParent.Name = "tabParent";
-            this.tabParent.Size = new System.Drawing.Size(698, 386);
-            this.tabParent.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.tabParent.TabBorderEnhanced = true;
-            this.tabParent.TabCloseButtonImage = null;
-            this.tabParent.TabCloseButtonImageDisabled = null;
-            this.tabParent.TabCloseButtonImageHot = null;
-            this.tabParent.TabGlassGradient = true;
-            this.tabParent.TabIndex = 10;
-            this.tabParent.TabOffset = 1;
-            this.tabParent.TabPlusButton = this.btnNewtab;
-            this.tabParent.TabPlusImage = null;
-            this.tabParent.TabPlusVisable = true;
-            this.tabParent.Load += new System.EventHandler(this.tabParent_Load);
-            // 
-            // btnNewtab
-            // 
-            this.btnNewtab.Location = new System.Drawing.Point(8, 32);
-            this.btnNewtab.Name = "btnNewtab";
-            this.btnNewtab.Size = new System.Drawing.Size(75, 23);
-            this.btnNewtab.TabIndex = 11;
-            this.btnNewtab.Text = "New Tab";
-            this.btnNewtab.UseVisualStyleBackColor = true;
-            this.btnNewtab.Click += new System.EventHandler(this.btnNewtab_Click);
-            // 
-            // vsbLoading
-            // 
-            this.vsbLoading.Active1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.vsbLoading.Active2 = System.Drawing.Color.Black;
-            this.vsbLoading.BackColor = System.Drawing.Color.Transparent;
-            this.vsbLoading.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.vsbLoading.Font = new System.Drawing.Font("Trebuchet MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vsbLoading.ForeColor = System.Drawing.Color.White;
-            this.vsbLoading.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.vsbLoading.Inactive2 = System.Drawing.Color.Black;
-            this.vsbLoading.Location = new System.Drawing.Point(12, 42);
-            this.vsbLoading.Name = "vsbLoading";
-            this.vsbLoading.Radius = 0;
-            this.vsbLoading.Size = new System.Drawing.Size(441, 223);
-            this.vsbLoading.Stroke = false;
-            this.vsbLoading.StrokeColor = System.Drawing.Color.Gray;
-            this.vsbLoading.TabIndex = 12;
-            this.vsbLoading.Text = "vSongBook";
-            this.vsbLoading.Transparency = false;
             // 
             // tmrMain
             // 
             this.tmrMain.Interval = 1000;
             this.tmrMain.Tick += new System.EventHandler(this.tmrMain_Tick);
             // 
-            // jsFeedback
-            // 
-            this.jsFeedback.BackColor = System.Drawing.Color.LightGreen;
-            this.jsFeedback.Dock = System.Windows.Forms.DockStyle.Top;
-            this.jsFeedback.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.jsFeedback.ForeColor = System.Drawing.Color.Black;
-            this.jsFeedback.Interval = 2500F;
-            this.jsFeedback.IsPositive = true;
-            this.jsFeedback.IsTimed = false;
-            this.jsFeedback.Location = new System.Drawing.Point(0, 24);
-            this.jsFeedback.Name = "jsFeedback";
-            this.jsFeedback.Size = new System.Drawing.Size(698, 50);
-            this.jsFeedback.TabIndex = 13;
-            this.jsFeedback.Text = "vSongBook Feedback";
-            this.jsFeedback.Visible = false;
-            // 
             // CcSongBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 410);
-            this.Controls.Add(this.jsFeedback);
-            this.Controls.Add(this.vsbLoading);
-            this.Controls.Add(this.tabParent);
+            this.ClientSize = new System.Drawing.Size(796, 455);
             this.Controls.Add(this.menuMainTop);
-            this.Controls.Add(this.btnNewtab);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "CcSongBook";
@@ -593,12 +515,8 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemHelp;
         private System.Windows.Forms.ToolStripMenuItem menuItemViewHelp;
         private System.Windows.Forms.ToolStripMenuItem menuItemTechnicalSupport;
-        private Jacksiro.MdiTab.TabControl tabParent;
-        private System.Windows.Forms.Button btnNewtab;
         private System.Windows.Forms.ToolStripMenuItem noftabs;
-        private JacksiroCtrl.JsButton vsbLoading;
         private System.Windows.Forms.Timer tmrMain;
-        private JacksiroCtrl.JsFeedback jsFeedback;
 
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using Finisar.SQLite;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EasyTabs;
 
 namespace vSongBook
 {
@@ -403,5 +404,32 @@ namespace vSongBook
             txtSearch.Clear();
         }
 
+        private void tsbtnSettingsx_Click(object sender, EventArgs e)
+        {
+            EeSettings settings = new EeSettings();
+            settings.Show();
+            
+            AppTabs tabbedApp = new AppTabs();
+            tabbedApp.Tabs.Add(new TitleBarTab(tabbedApp)
+            {
+                Content = new EeSettings
+                {
+                    Text = "Your Preferences"
+                }
+            });
+            tabbedApp.SelectedTabIndex = 0;
+
+            TitleBarTabsApplicationContext applicationContext = new TitleBarTabsApplicationContext();
+            applicationContext.Start(tabbedApp);
+        }
+
+        private void tsbtnSettings_Click(object sender, EventArgs e)
+        {
+            AppStart.tabbedApp.Tabs.Add(new TitleBarTab(AppStart.tabbedApp)
+            {
+                Content = new EeSettings { Text = "Manage Preferences" }
+            });
+            AppStart.tabbedApp.SelectedTabIndex = 0;
+        }
     }
 }

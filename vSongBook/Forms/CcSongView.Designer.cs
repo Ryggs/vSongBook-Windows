@@ -58,6 +58,7 @@
             this.tsbtnSelect = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbtnPrint = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnSettings = new System.Windows.Forms.ToolStripButton();
             this.tblSearch = new System.Windows.Forms.TableLayoutPanel();
             this.btnClear = new JacksiroCtrl.JsButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -89,12 +90,14 @@
             this.splitMain.Panel1.AutoScroll = true;
             this.splitMain.Panel1.BackColor = System.Drawing.Color.White;
             this.splitMain.Panel1.Controls.Add(this.tblLeft);
+            this.splitMain.Panel1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // splitMain.Panel2
             // 
             this.splitMain.Panel2.Controls.Add(this.tblRight);
-            this.splitMain.Size = new System.Drawing.Size(747, 338);
-            this.splitMain.SplitterDistance = 200;
+            this.splitMain.Panel2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.splitMain.Size = new System.Drawing.Size(879, 482);
+            this.splitMain.SplitterDistance = 235;
             this.splitMain.SplitterWidth = 3;
             this.splitMain.TabIndex = 0;
             // 
@@ -107,14 +110,14 @@
             this.tblLeft.Controls.Add(this.cmbBooks, 0, 0);
             this.tblLeft.Controls.Add(this.grpSongResults, 0, 2);
             this.tblLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblLeft.Location = new System.Drawing.Point(0, 0);
+            this.tblLeft.Location = new System.Drawing.Point(0, 5);
             this.tblLeft.Margin = new System.Windows.Forms.Padding(0);
             this.tblLeft.Name = "tblLeft";
             this.tblLeft.RowCount = 3;
             this.tblLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tblLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tblLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblLeft.Size = new System.Drawing.Size(200, 338);
+            this.tblLeft.Size = new System.Drawing.Size(235, 477);
             this.tblLeft.TabIndex = 0;
             // 
             // grpCriteria
@@ -126,7 +129,7 @@
             this.grpCriteria.Location = new System.Drawing.Point(3, 38);
             this.grpCriteria.Name = "grpCriteria";
             this.grpCriteria.Padding = new System.Windows.Forms.Padding(5);
-            this.grpCriteria.Size = new System.Drawing.Size(194, 44);
+            this.grpCriteria.Size = new System.Drawing.Size(229, 44);
             this.grpCriteria.TabIndex = 12;
             this.grpCriteria.TabStop = false;
             this.grpCriteria.Text = "Search Criteria:";
@@ -141,7 +144,7 @@
             this.btnSearchAll.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchAll.ForeColor = System.Drawing.Color.Black;
             this.btnSearchAll.IsOn = true;
-            this.btnSearchAll.Location = new System.Drawing.Point(151, 18);
+            this.btnSearchAll.Location = new System.Drawing.Point(186, 18);
             this.btnSearchAll.Name = "btnSearchAll";
             this.btnSearchAll.Size = new System.Drawing.Size(38, 21);
             this.btnSearchAll.TabIndex = 7;
@@ -157,7 +160,7 @@
             this.lblSearchAll.ForeColor = System.Drawing.Color.White;
             this.lblSearchAll.Location = new System.Drawing.Point(8, 18);
             this.lblSearchAll.Name = "lblSearchAll";
-            this.lblSearchAll.Size = new System.Drawing.Size(159, 22);
+            this.lblSearchAll.Size = new System.Drawing.Size(158, 22);
             this.lblSearchAll.TabIndex = 11;
             this.lblSearchAll.Text = "Search All Songbooks";
             this.lblSearchAll.Click += new System.EventHandler(this.lblSearchAll_Click);
@@ -171,7 +174,7 @@
             this.cmbBooks.FormattingEnabled = true;
             this.cmbBooks.Location = new System.Drawing.Point(3, 3);
             this.cmbBooks.Name = "cmbBooks";
-            this.cmbBooks.Size = new System.Drawing.Size(194, 30);
+            this.cmbBooks.Size = new System.Drawing.Size(229, 30);
             this.cmbBooks.TabIndex = 11;
             this.cmbBooks.SelectedIndexChanged += new System.EventHandler(this.cmbBooks_SelectedIndexChanged);
             // 
@@ -186,7 +189,7 @@
             this.grpSongResults.Location = new System.Drawing.Point(3, 85);
             this.grpSongResults.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.grpSongResults.Name = "grpSongResults";
-            this.grpSongResults.Size = new System.Drawing.Size(194, 250);
+            this.grpSongResults.Size = new System.Drawing.Size(229, 389);
             this.grpSongResults.TabIndex = 13;
             this.grpSongResults.TabStop = false;
             this.grpSongResults.Text = " 0 Songs Found: ";
@@ -203,7 +206,7 @@
             this.lstSongResults.Location = new System.Drawing.Point(3, 16);
             this.lstSongResults.Margin = new System.Windows.Forms.Padding(0);
             this.lstSongResults.Name = "lstSongResults";
-            this.lstSongResults.Size = new System.Drawing.Size(188, 231);
+            this.lstSongResults.Size = new System.Drawing.Size(223, 370);
             this.lstSongResults.TabIndex = 8;
             this.lstSongResults.SelectedIndexChanged += new System.EventHandler(this.lstSongResults_SelectedIndexChanged);
             // 
@@ -236,7 +239,7 @@
             this.tblRight.Controls.Add(this.ToolStripSong, 0, 1);
             this.tblRight.Controls.Add(this.tblSearch, 0, 0);
             this.tblRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblRight.Location = new System.Drawing.Point(0, 0);
+            this.tblRight.Location = new System.Drawing.Point(0, 5);
             this.tblRight.Margin = new System.Windows.Forms.Padding(0);
             this.tblRight.Name = "tblRight";
             this.tblRight.RowCount = 4;
@@ -244,7 +247,7 @@
             this.tblRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tblRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 0F));
-            this.tblRight.Size = new System.Drawing.Size(544, 338);
+            this.tblRight.Size = new System.Drawing.Size(641, 477);
             this.tblRight.TabIndex = 6;
             // 
             // txtSongContent
@@ -259,7 +262,7 @@
             this.txtSongContent.ReadOnly = true;
             this.txtSongContent.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtSongContent.ShortcutsEnabled = false;
-            this.txtSongContent.Size = new System.Drawing.Size(542, 258);
+            this.txtSongContent.Size = new System.Drawing.Size(639, 397);
             this.txtSongContent.TabIndex = 1;
             // 
             // ToolStripSong
@@ -283,32 +286,35 @@
             this.tsbtnCopy,
             this.tsbtnSelect,
             this.toolStripSeparator4,
-            this.tsbtnPrint});
+            this.tsbtnPrint,
+            this.tsbtnSettings});
             this.ToolStripSong.Location = new System.Drawing.Point(1, 42);
             this.ToolStripSong.Name = "ToolStripSong";
             this.ToolStripSong.Padding = new System.Windows.Forms.Padding(6, 0, 1, 0);
-            this.ToolStripSong.Size = new System.Drawing.Size(542, 35);
+            this.ToolStripSong.Size = new System.Drawing.Size(639, 35);
             this.ToolStripSong.Stretch = true;
             this.ToolStripSong.TabIndex = 5;
             // 
             // tsbtnProject
             // 
+            this.tsbtnProject.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbtnProject.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnProject.Image")));
             this.tsbtnProject.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnProject.Name = "tsbtnProject";
             this.tsbtnProject.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.tsbtnProject.Size = new System.Drawing.Size(93, 32);
+            this.tsbtnProject.Size = new System.Drawing.Size(38, 32);
             this.tsbtnProject.Text = "&PROJECT";
             this.tsbtnProject.ToolTipText = "Project current song";
             this.tsbtnProject.Click += new System.EventHandler(this.tsbtnProject_Click);
             // 
             // tsbtnEdit
             // 
+            this.tsbtnEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbtnEdit.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnEdit.Image")));
             this.tsbtnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnEdit.Name = "tsbtnEdit";
             this.tsbtnEdit.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.tsbtnEdit.Size = new System.Drawing.Size(69, 32);
+            this.tsbtnEdit.Size = new System.Drawing.Size(38, 32);
             this.tsbtnEdit.Text = "&EDIT";
             this.tsbtnEdit.ToolTipText = "Edit current song";
             this.tsbtnEdit.Click += new System.EventHandler(this.tsbtnEdit_Click);
@@ -437,6 +443,17 @@
             this.tsbtnPrint.ToolTipText = "Print current song";
             this.tsbtnPrint.Click += new System.EventHandler(this.tsbtnPrint_Click);
             // 
+            // tsbtnSettings
+            // 
+            this.tsbtnSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnSettings.Image = global::vSongBook.Properties.Resources.settings;
+            this.tsbtnSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnSettings.Name = "tsbtnSettings";
+            this.tsbtnSettings.Size = new System.Drawing.Size(28, 32);
+            this.tsbtnSettings.Text = "Settings";
+            this.tsbtnSettings.ToolTipText = "Manage Settings";
+            this.tsbtnSettings.Click += new System.EventHandler(this.tsbtnSettings_Click);
+            // 
             // tblSearch
             // 
             this.tblSearch.BackColor = System.Drawing.Color.White;
@@ -454,7 +471,7 @@
             this.tblSearch.Padding = new System.Windows.Forms.Padding(5);
             this.tblSearch.RowCount = 1;
             this.tblSearch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblSearch.Size = new System.Drawing.Size(542, 40);
+            this.tblSearch.Size = new System.Drawing.Size(639, 40);
             this.tblSearch.TabIndex = 8;
             // 
             // btnClear
@@ -467,7 +484,7 @@
             this.btnClear.ForeColor = System.Drawing.Color.Black;
             this.btnClear.Inactive1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnClear.Inactive2 = System.Drawing.Color.Gray;
-            this.btnClear.Location = new System.Drawing.Point(507, 5);
+            this.btnClear.Location = new System.Drawing.Point(604, 5);
             this.btnClear.Margin = new System.Windows.Forms.Padding(0);
             this.btnClear.Name = "btnClear";
             this.btnClear.Radius = 15;
@@ -489,7 +506,7 @@
             this.txtSearch.Location = new System.Drawing.Point(35, 5);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(0);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(472, 28);
+            this.txtSearch.Size = new System.Drawing.Size(569, 28);
             this.txtSearch.TabIndex = 8;
             this.txtSearch.Text = "Search for Songs";
             this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
@@ -514,15 +531,15 @@
             // jsFeedback
             // 
             this.jsFeedback.BackColor = System.Drawing.Color.LightGreen;
-            this.jsFeedback.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.jsFeedback.Dock = System.Windows.Forms.DockStyle.Top;
             this.jsFeedback.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.jsFeedback.ForeColor = System.Drawing.Color.Black;
             this.jsFeedback.Interval = 2500F;
             this.jsFeedback.IsPositive = true;
             this.jsFeedback.IsTimed = false;
-            this.jsFeedback.Location = new System.Drawing.Point(0, 288);
+            this.jsFeedback.Location = new System.Drawing.Point(0, 0);
             this.jsFeedback.Name = "jsFeedback";
-            this.jsFeedback.Size = new System.Drawing.Size(747, 50);
+            this.jsFeedback.Size = new System.Drawing.Size(879, 50);
             this.jsFeedback.TabIndex = 3;
             this.jsFeedback.Text = "vSongBook Feedback";
             this.jsFeedback.Visible = false;
@@ -531,7 +548,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 338);
+            this.ClientSize = new System.Drawing.Size(879, 482);
             this.Controls.Add(this.jsFeedback);
             this.Controls.Add(this.splitMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -597,5 +614,6 @@
         private System.Windows.Forms.ToolStripButton tsbtnPrint;
         private System.Windows.Forms.PictureBox pbxSearch;
         private JacksiroCtrl.JsButton btnClear;
+        private System.Windows.Forms.ToolStripButton tsbtnSettings;
     }
 }
