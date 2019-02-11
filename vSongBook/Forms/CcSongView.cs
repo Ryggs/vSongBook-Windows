@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using Finisar.SQLite;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using EasyTabs;
 
@@ -305,12 +300,6 @@ namespace vSongBook
         private void tsbtnPrint_Click(object sender, EventArgs e)
         {
             loadFeedback("Oops! Sorry, that feature will be available in the next update ...");
-        }
-
-                
-        private void CcSongView_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            //opentabs = opentabs - 1;
         }
 
         private void txtSearch_Click(object sender, EventArgs e)

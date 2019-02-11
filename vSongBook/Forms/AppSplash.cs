@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Windows.Forms;
-using EasyTabs;
 
 namespace vSongBook
 {
-    public partial class AppStart : Form
+    public partial class AppSplash : Form
     {
         AppFunctions vsbf = new AppFunctions();
         AppSettings settings = new AppSettings();
         public static AppTabs tabbedApp = new AppTabs();
-        
-        public AppStart()
+
+        public AppSplash()
         {
             InitializeComponent();
             settings.VsbVersion = "1.3.2.0";
@@ -198,21 +197,10 @@ namespace vSongBook
 
         private void lblLoaded_TextChanged(object sender, EventArgs e)
         {
-            tabbedApp.Tabs.Add(new TitleBarTab(tabbedApp)
-            {
-                Content = new CcSongView { Text = "Song Search " + (AppStart.tabbedApp.Tabs.Count + 1) }
-            });
-            tabbedApp.SelectedTabIndex = 0;
+            CcSongBook songbook = new CcSongBook();
+            songbook.Show();
 
-            TitleBarTabsApplicationContext applicationContext = new TitleBarTabsApplicationContext();
-            applicationContext.Start(tabbedApp);
-            tmrTabs.Enabled = true;
             this.Hide();
-        }
-
-        private void tmrTabs_Tick(object sender, EventArgs e)
-        {
-            if (AppStart.tabbedApp.Tabs.Count == 0) this.Close();
         }
     }
 }

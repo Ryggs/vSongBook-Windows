@@ -1,5 +1,4 @@
 ﻿using EasyTabs;
-
 namespace vSongBook
 {
     public partial class AppTabs : TitleBarTabs
@@ -17,7 +16,7 @@ namespace vSongBook
         {
             return new TitleBarTab(this)
             {
-                Content = new CcSongView { Text = "Song Search" }
+                Content = new CcSongView { Text = "Song Search " + (AppStart.tabbedApp.Tabs.Count + 1) }
             };
         }
     }

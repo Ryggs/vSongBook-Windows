@@ -1,6 +1,6 @@
 ﻿namespace vSongBook
 {
-    partial class AppStart
+    partial class AppSplash
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppStart));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppSplash));
             this.tmrTimerMain = new System.Windows.Forms.Timer(this.components);
             this.tmrTimer1 = new System.Windows.Forms.Timer(this.components);
             this.tmrTimer2 = new System.Windows.Forms.Timer(this.components);
@@ -71,7 +71,6 @@
             this.pbxName3 = new System.Windows.Forms.PictureBox();
             this.tmrTimer0 = new System.Windows.Forms.Timer(this.components);
             this.pbxBackground = new System.Windows.Forms.PictureBox();
-            this.tmrTabs = new System.Windows.Forms.Timer(this.components);
             this.grpJustaMinute.SuspendLayout();
             this.tblInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxName2)).BeginInit();
@@ -499,12 +498,7 @@
             this.pbxBackground.TabIndex = 79;
             this.pbxBackground.TabStop = false;
             // 
-            // tmrTabs
-            // 
-            this.tmrTabs.Interval = 3000;
-            this.tmrTabs.Tick += new System.EventHandler(this.tmrTabs_Tick);
-            // 
-            // AppStart
+            // AppSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -531,7 +525,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "AppStart";
+            this.Name = "AppSplash";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -600,6 +594,5 @@
         private System.Windows.Forms.PictureBox pbxName3;
         private System.Windows.Forms.Timer tmrTimer0;
         private System.Windows.Forms.PictureBox pbxBackground;
-        private System.Windows.Forms.Timer tmrTabs;
     }
 }

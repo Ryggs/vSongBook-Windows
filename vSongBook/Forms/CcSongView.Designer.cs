@@ -556,7 +556,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SongView";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CcSongView_FormClosing);
             this.Load += new System.EventHandler(this.CcSongView_Load);
             this.Resize += new System.EventHandler(this.CcSongView_Resize);
             this.splitMain.Panel1.ResumeLayout(false);
