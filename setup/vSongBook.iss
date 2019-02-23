@@ -2,34 +2,38 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "vSongBook"
-#define MyAppVersion "1.3.5.2"
+#define MyAppVersion "2.3.5"
 #define MyAppPublisher "Jack Siro"
-#define MyAppURL "http://jacksiro.github.io/vsb4pc" 
+#define MyAppURL "http://jacksiro.github.com"
+#define MyAppExeName "vSongBook.exe"  
 #define UpdatesURL "https://raw.githubusercontent.com/vsongbook/vsongbook-windows/master/currentrelease/vSongBook.application"
-#define MyOwnURL "http://twitter.com/jacksiroke"
-#define MyAppExeName "vSongBook.exe"
 
 [Setup]
-AppId={{77FDF823-C0A8-4F78-8C64-7188F6D24BD4}
+; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
+; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
+AppId={{3AE71FCF-9AF5-43E7-A0FB-B6DBB28209ED}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
-AppSupportURL={#MyOwnURL}
+AppSupportURL={#MyAppURL}
 AppUpdatesURL={#UpdatesURL}
-DefaultDirName=C:\AppSmata\{#MyAppName}
-DefaultGroupName={#MyAppName}
+DefaultDirName={localappdata}\AppSmata\{#MyAppName}
 DisableProgramGroupPage=yes
-LicenseFile=D:\siros\projects\vSongBook\v1.6.0\Res\txt\license.txt
-InfoBeforeFile=D:\siros\projects\vSongBook\v1.6.0\Res\txt\before.txt
-InfoAfterFile=D:\siros\projects\vSongBook\v1.6.0\Res\txt\after.txt
-OutputDir=D:\siros\projects\vSongBook\v1.6.0
-OutputBaseFilename={#MyAppName}_v{#MyAppVersion}
-SetupIconFile=D:\siros\projects\vSongBook\v1.6.0\Res\ico\app.ico
+; The [Icons] "quicklaunchicon" entry uses {userappdata} but its [Tasks] entry has a proper IsAdminInstallMode Check.
+UsedUserAreasWarning=no
+LicenseFile=texts\license.txt
+InfoBeforeFile=texts\before.txt
+InfoAfterFile=texts\after.txt
+; Remove the following line to run in administrative install mode (install for all users.)
+PrivilegesRequired=lowest
+OutputDir=publish
+OutputBaseFilename=vSongBook_Bemba
+SetupIconFile=app.ico
 Compression=lzma
-VersionInfoVersion={#MyAppVersion}
 SolidCompression=yes
+WizardStyle=modern 
 UninstallDisplayIcon={app}\{#MyAppExeName}
 UninstallDisplayName={#MyAppName}
 
@@ -39,19 +43,30 @@ Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 Name: "portuguese"; MessagesFile: "compiler:Languages\Portuguese.isl"
 Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 
-[Files]
-Source: "D:\siros\projects\vSongBook\v1.6.0\vSongBook.exe"; DestDir: "{app}"; Flags: ignoreversion 
-Source: "D:\siros\projects\vSongBook\v1.6.0\Langs\*"; DestDir: "{app}\langs"; Flags: ignoreversion recursesubdirs createallsubdirs 
-Source: "D:\siros\projects\vSongBook\v1.6.0\Res\*"; DestDir: "{app}\res"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\siros\projects\vSongBook\v1.6.0\Reg\*"; DestDir: "{app}\res"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\siros\projects\vSongBook\v1.6.0\Reg\TABSMATA.OCX"; DestDir: {sys}; Flags: onlyifdoesntexist regserver 
-Source: "D:\siros\projects\vSongBook\v1.6.0\Reg\MSCOMCTL.OCX"; DestDir: {sys}; Flags: onlyifdoesntexist regserver
-Source: "D:\siros\projects\vSongBook\v1.6.0\Reg\PICCLP32.OCX"; DestDir: {sys}; Flags: onlyifdoesntexist regserver
-                                                
+[Tasks]
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 6.1; Check: not IsAdminInstallMode
+
+[Files]    
+Source: "DB\*"; DestDir: "{app}\DB"; Flags: ignoreversion recursesubdirs createallsubdirs  
+Source: "vSongBook.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "app.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "EasyTabs.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "JacksiroCtrl.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "SQLite.NET.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "SQLite3.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Win32Interop.Dwmapi.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Win32Interop.Gdi32.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Win32Interop.Kernel32.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Win32Interop.User32.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Win32Interop.Uxtheme.dll"; DestDir: "{app}"; Flags: ignoreversion
+; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+
 [Icons]
-Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
-Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
-Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
+Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
+Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: quicklaunchicon
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+
