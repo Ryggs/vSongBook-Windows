@@ -2,7 +2,7 @@
 vSongBook is an app that seeks to give its users the freedom to be sing anywhere anytime provided they have the latest version installed on their device. This is the respiratory for vSongBook built for Windows Machine using Visual Studio 2017 and Sqlite database to make it faster and reliable
 
 <img src="vsb1.png" />
-
+-----------------------------------------------------------------
 ## Features in this package
 This version of vSongBook unlike its predeseccors comes with a number of new features as you will learn with time.
 ### 1. Tabbed Windows Viewing (Updated)
@@ -23,38 +23,21 @@ vSongBook allows you to add a new songbook, new song and above be able to edit t
 
 ### 4. Projection Mode (Updated with more Shortcuts)
 When projecting a song some more shortcuts have been added to enhance your user experience.
-
-=================================================================
-|		|	###KEY					|	###FUNCTION				|
-=================================================================
-| 1.	|	Down Arrow 				|	Go to Next Stanza		|
 -----------------------------------------------------------------
-| 2.	|	Up Arrow 				|	Go to Previous Stanza	|
------------------------------------------------------------------
-| 3.	|	(<) / (Less than) 		|	Decrease Font Size		|
------------------------------------------------------------------
-| 3.	|	(>) / (Greater than)	|	Increase Font Size		|
------------------------------------------------------------------
-| 4.	|	Letter C 				|	Go to Chorus			|
------------------------------------------------------------------
-| 5.	|	Number 1  				|	Go to Stanza 1			|
------------------------------------------------------------------
-| 6.	|	Number 2  				|	Go to Stanza 2			|
------------------------------------------------------------------
-| 7.	|	Number 3  				|	Go to Stanza 3			|
------------------------------------------------------------------
-| 8.	|	Number 4  				|	Go to Stanza 4			|
------------------------------------------------------------------
-| 9.	|	Number 5  				|	Go to Stanza 5			|
------------------------------------------------------------------
-| 10.	|	Number 6  				|	Go to Stanza 6			|
------------------------------------------------------------------
-| 11.	|	Number 7  				|	Go to Stanza 7			|
------------------------------------------------------------------
-| 12.	|	Number 8  				|	Go to Stanza 8			|
------------------------------------------------------------------
-| 13.	|	Number 9  				|	Go to Stanza 9			|
-=================================================================
+1.	Down Arrow => Go to Next Stanza	
+2.	Up Arrow => Go to Previous Stanza	
+3.	(<) / (Less than) => Decrease Font Size	
+3.	(>) / (Greater than) => Increase Font Size	
+4.	Letter C => Go to Chorus	
+5.	Number 1 => Go to Stanza 1	
+6.	Number 2 => Go to Stanza 2	
+7.	Number 3 => Go to Stanza 3	
+8.	Number 4 => Go to Stanza 4	
+9.	Number 5 => Go to Stanza 5	
+10.	Number 6 => Go to Stanza 6	
+11.	Number 7 => Go to Stanza 7	
+12.	Number 8 => Go to Stanza 8	
+13.	Number 9 => Go to Stanza 9	
 
 
 
