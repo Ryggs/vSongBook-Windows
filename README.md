@@ -19,4 +19,8 @@ From the Song Search tab you can click the gear button and open the "Manage Pref
 vSongBook allows you to add a new songbook, new song and above be able to edit this particular items with the ease of the click of a button. More instructions on this in the future.
 * To manage your songsbooks, click on the double doc icon on the "SongView" tab and open songbooks tabs
 * To edit a song, open it first by selecting the right songbook where its contained and selecting the song from the list of songs before then clicking on edit button
-* To add a new song click on the new song icon on the the "songview" Tab 
+* To add a new song click on the new song icon on the the "songview" Tab
+
+### 4. Projection Mode (Updated with more Shortcuts)
+When projecting a song some more shortcuts have been added to enhance your user experience.
+1. 
